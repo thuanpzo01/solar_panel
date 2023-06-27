@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hehe</title>
+    <style>
+    #coordinates-tooltip {
+      position: absolute;
+      display: none;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      white-space: nowrap;
+      z-index: 9999;
+    }
+    
+    #coordinates-tooltip.show {
+      display: block;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- single canvas node to render the chart -->
+      <canvas
+        id="myChart"
+        width="500"
+        height="500"
+        aria-label="chart"
+        role="img"
+      ></canvas>
+    </div>
+    
+    <div id="coordinates-tooltip">
+      <span id="x-coordinate"></span>
+      <span id="y-coordinate"></span>
+    </div>
+
+    <script src="js/chart.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
